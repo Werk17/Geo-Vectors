@@ -1,0 +1,565 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -108.3601,45.9727,78700 ]
+    },
+    "properties": {
+    "County":"Yellowstone"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.1863,47.0207,8718 ]
+    },
+    "properties": {
+    "County":"Wibaux"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -109.8421,46.4874,17138 ]
+    },
+    "properties": {
+    "County":"Wheatland"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5325,48.3347,39920 ]
+    },
+    "properties": {
+    "County":"Valley"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -107.2369,46.1715,10643 ]
+    },
+    "properties": {
+    "County":"Treasure"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.7313,48.6175,37223 ]
+    },
+    "properties": {
+    "County":"Toole"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.1627,47.8179,39347 ]
+    },
+    "properties": {
+    "County":"Teton"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -109.8912,45.701,17861 ]
+    },
+    "properties": {
+    "County":"Sweet Grass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -109.213,45.6523,42871 ]
+    },
+    "properties": {
+    "County":"Stillwater"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.6901,45.9061,43517 ]
+    },
+    "properties": {
+    "County":"Silver Bow"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.5431,48.6974,23051 ]
+    },
+    "properties": {
+    "County":"Sheridan"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.1536,47.6957,47839 ]
+    },
+    "properties": {
+    "County":"Sanders"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5653,46.0242,48264 ]
+    },
+    "properties": {
+    "County":"Rosebud"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.9255,48.2809,20724 ]
+    },
+    "properties": {
+    "County":"Roosevelt"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.6391,47.7521,21063 ]
+    },
+    "properties": {
+    "County":"Richland"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.1304,46.0635,50697 ]
+    },
+    "properties": {
+    "County":"Ravalli"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.5572,46.8682,9511 ]
+    },
+    "properties": {
+    "County":"Prairie"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.0493,46.9379,40217 ]
+    },
+    "properties": {
+    "County":"Powell"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.6109,45.3947,36638 ]
+    },
+    "properties": {
+    "County":"Powder River"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.4465,48.2343,26646 ]
+    },
+    "properties": {
+    "County":"Pondera"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -107.8905,48.229,35097 ]
+    },
+    "properties": {
+    "County":"Phillips"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -108.3333,47.175,9363 ]
+    },
+    "properties": {
+    "County":"Petroleum"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.5064,45.597,94609 ]
+    },
+    "properties": {
+    "County":"Park"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -108.3212,46.4464,18747 ]
+    },
+    "properties": {
+    "County":"Musselshell"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.9449,47.1072,78627 ]
+    },
+    "properties": {
+    "County":"Missoula"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.8631,47.0981,26711 ]
+    },
+    "properties": {
+    "County":"Mineral"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.8206,46.6376,30635 ]
+    },
+    "properties": {
+    "County":"Meagher"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.8121,47.5977,9908 ]
+    },
+    "properties": {
+    "County":"McCone"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.9151,45.2788,87520 ]
+    },
+    "properties": {
+    "County":"Madison"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.4496,48.4634,36953 ]
+    },
+    "properties": {
+    "County":"Lincoln"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.0115,48.5739,17673 ]
+    },
+    "properties": {
+    "County":"Liberty"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.5344,47.1899,80250 ]
+    },
+    "properties": {
+    "County":"Lewis And Clark"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.1349,47.597,50757 ]
+    },
+    "properties": {
+    "County":"Lake"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.2006,47.0311,42720 ]
+    },
+    "properties": {
+    "County":"Judith Basin"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.1499,46.1606,66482 ]
+    },
+    "properties": {
+    "County":"Jefferson"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.1276,48.5696,32654 ]
+    },
+    "properties": {
+    "County":"Hill"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.4202,46.3869,27554 ]
+    },
+    "properties": {
+    "County":"Granite"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -109.1318,46.4005,15059 ]
+    },
+    "properties": {
+    "County":"Golden Valley"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -112.9653,48.6561,49714 ]
+    },
+    "properties": {
+    "County":"Glacier"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -107.1049,47.4172,16336 ]
+    },
+    "properties": {
+    "County":"Garfield"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.2056,45.3376,89149 ]
+    },
+    "properties": {
+    "County":"Gallatin"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.0979,48.303,80144 ]
+    },
+    "properties": {
+    "County":"Flathead"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -109.3598,47.2602,80247 ]
+    },
+    "properties": {
+    "County":"Fergus"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.4655,46.2947,15531 ]
+    },
+    "properties": {
+    "County":"Fallon"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.0994,46.0131,42778 ]
+    },
+    "properties": {
+    "County":"Deer Lodge"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.9234,47.3283,18509 ]
+    },
+    "properties": {
+    "County":"Dawson"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.5298,48.7726,23858 ]
+    },
+    "properties": {
+    "County":"Daniels"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.5301,46.3205,28399 ]
+    },
+    "properties": {
+    "County":"Custer"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.474,47.8648,49074 ]
+    },
+    "properties": {
+    "County":"Chouteau"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.4165,47.266,84724 ]
+    },
+    "properties": {
+    "County":"Cascade"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.5117,45.5708,30724 ]
+    },
+    "properties": {
+    "County":"Carter"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -109.1433,45.3168,77249 ]
+    },
+    "properties": {
+    "County":"Carbon"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.4521,46.3095,20420 ]
+    },
+    "properties": {
+    "County":"Broadwater"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -108.9651,48.3646,42836 ]
+    },
+    "properties": {
+    "County":"Blaine"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -107.3996,45.5509,50472 ]
+    },
+    "properties": {
+    "County":"Big Horn"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -113.0231,45.1549,82909 ]
+    },
+    "properties": {
+    "County":"Beaverhead"
+    }
+  }
+]
+}

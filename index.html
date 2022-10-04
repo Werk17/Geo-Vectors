@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+
+<body>
+    <h1 style="margin: 30px 60px 30px 40px;">There are more fishing access points near cities than rural areas in
+        Montana.
+    </h1>
+    <svg id="map" style="padding: 50px"></svg>
+
+
+    <script>
+
+        var margin = { top: 40, right: 50, bottom: 40, left: 50 },
+            width = 900 - margin.left - margin.right,
+            height = 600 - margin.top - margin.bottom;
+
+        var svg = d3.select("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + (margin.left / 2) + "," + (margin.top * 6) + ")");
+
+        const projection = d3.geoAlbersUsa()              // GPS of location to zoom on
+            .scale(4600)                       // This is like the zoom
+            .translate([width + 300, height + 300])
+// Start drawing the Montana border from here
+        d3.json("Montana.geojson").then(function (data) {
+
+            // Filter data
+            data.features = data.features.filter(d => { console.log(d.properties.name); return d.properties.name == "Montana" })
+
+            // Draw the map
+            svg.append("g")
+                .selectAll("path")
+                .data(data.features)
+                .join("path")
+                .attr("fill", "none")
+                .attr("d", d3.geoPath()
+                    .projection(projection)
+                )
+                .style("stroke", "black")
+                .attr('transform', 'rotate(-8 0 0)')
+        })
+// plot all the Fishing Access Points in Montana
+        d3.json("MFAP.geojson").then(function (data) {
+            const projection2 = d3.geoAlbersUsa()              // GPS of location to zoom on
+                .scale(4550)                       // This is like the zoom
+                .translate([width + 300, height + 300])
+            // data.features = data.features.filter(d => {
+            //     console.log(d.properties.NAME);
+            //     console.log(d.geometry.coordinates)
+            // })
+
+            svg.append("g")
+                .selectAll("path")
+                .data(data.features)
+                .join("path")
+                .attr("fill", "#3d4ed1")
+                .attr("d", d3.geoPath()
+                    .projection(projection2)
+                )
+                .attr('transform', 'rotate(-8 0 0)')
+                // .style("stroke", "blue")
+                .style("opacity", .3)
+        })
+
+// Plot the more populated cities in Montana 
+        d3.json("populated_places.json").then(function (data) {
+            const projection2 = d3.geoAlbersUsa()              // GPS of location to zoom on
+                .scale(4550)                       // This is like the zoom
+                .translate([width + 300, height + 300])
+            // data.features = data.features.filter(d => {
+            //     console.log(d.properties.NAME);
+            //     console.log(d.geometry.coordinates)
+            // })
+
+            svg.append("g")
+                .selectAll("path")
+                .data(data.features)
+                .join("path")
+                .attr("fill", "#b31b1b")
+                .attr("d", d3.geoPath()
+                    .projection(projection2)
+                )
+                .attr('transform', 'rotate(-8 0 0)')
+            // .style("stroke", "red")
+            // .style("stroke-width", .5)
+            // .attr("r", 1)
+        })
+// plot the towns/cities of Montana here
+        d3.json("MT_Counties_data.geojson").then(function (data) {
+            const projection2 = d3.geoAlbersUsa()              // GPS of location to zoom on
+                .scale(4550)                       // This is like the zoom
+                .translate([width + 300, height + 300])
+            // data.features = data.features.filter(d => {
+            //     console.log(d.properties.NAME);
+            //     console.log(d.geometry.coordinates)
+            // })
+
+            svg.append("g")
+                .selectAll("path")
+                .data(data.features)
+                .join("path")
+                .attr("fill", "#b31b1b")
+                .attr("d", d3.geoPath()
+                    .projection(projection2)
+                )
+                .attr('transform', 'rotate(-8 0 0)')
+                .style("opacity", .25)
+           
+        })
+
+
+    </script>
+</body>
+
+</html>
