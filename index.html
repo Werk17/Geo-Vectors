@@ -7,18 +7,61 @@
 
 </head>
 
-<body>
-    <h1 style="margin: 30px 60px 30px 40px;">There are more fishing access points near cities than rural areas in
-        Montana.
+<body style="margin-left: 50px; background: rgb(255, 255, 255)">
+
+    <h1 style="margin-left: 50px; margin-right: 15%">
+        In Montana, there are more Fishing Access Points near dense Cities than
+        there are in Rural Montana.
     </h1>
-    <svg id="map" style="padding: 50px"></svg>
+
+    <p style="margin-left: 50px; margin-right: 15%;">Dense Cities Billings, Missoula, Great Falls, Helena (High population)
+    
+    </p><hr style="margin-left: 50px; margin-right: 25%">
+    
+
+    <svg id="map"></svg>
+
+    <hr style="margin-left: 50px; margin-right: 25%">
+    <table style="margin: left; padding: 10px; align-items: center; background-color: aliceblue;">
+
+        <tr>
+            <th>Rank</th>
+            <th>City</th>
+            <th>Population</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Billings</td>
+            <td>119,706</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Missoula</td>
+            <td>74,829</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Great Falls</td>
+            <td>60,830</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Bozeman</td>
+            <td>56,495</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Butte</td>
+            <td>34,688</td>
+        </tr>
+    </table>
 
 
     <script>
 
         var margin = { top: 40, right: 50, bottom: 40, left: 50 },
             width = 900 - margin.left - margin.right,
-            height = 600 - margin.top - margin.bottom;
+            height = 550 - margin.top - margin.bottom;
 
         var svg = d3.select("svg")
             .attr("width", width + margin.left + margin.right)
@@ -30,7 +73,7 @@
         const projection = d3.geoAlbersUsa()              // GPS of location to zoom on
             .scale(4600)                       // This is like the zoom
             .translate([width + 300, height + 300])
-// Start drawing the Montana border from here
+        // Start drawing the Montana border from here
         d3.json("Montana.geojson").then(function (data) {
 
             // Filter data
@@ -48,7 +91,7 @@
                 .style("stroke", "black")
                 .attr('transform', 'rotate(-8 0 0)')
         })
-// plot all the Fishing Access Points in Montana
+        // plot all the Fishing Access Points in Montana
         d3.json("MFAP.geojson").then(function (data) {
             const projection2 = d3.geoAlbersUsa()              // GPS of location to zoom on
                 .scale(4550)                       // This is like the zoom
@@ -71,7 +114,7 @@
                 .style("opacity", .3)
         })
 
-// Plot the more populated cities in Montana 
+        // Plot the more populated cities in Montana 
         d3.json("populated_places.json").then(function (data) {
             const projection2 = d3.geoAlbersUsa()              // GPS of location to zoom on
                 .scale(4550)                       // This is like the zoom
@@ -94,7 +137,7 @@
             // .style("stroke-width", .5)
             // .attr("r", 1)
         })
-// plot the towns/cities of Montana here
+        // plot the towns/cities of Montana here
         d3.json("MT_Counties_data.geojson").then(function (data) {
             const projection2 = d3.geoAlbersUsa()              // GPS of location to zoom on
                 .scale(4550)                       // This is like the zoom
@@ -114,8 +157,18 @@
                 )
                 .attr('transform', 'rotate(-8 0 0)')
                 .style("opacity", .25)
-           
+
         })
+
+
+        // create legend
+        svg.append("circle").attr("cx", width - 50).attr("cy", 130).attr("r", 7).style("fill", "#b31b1b")
+        svg.append("text").attr("x", width - 40).attr("y", 130).text("Popular City").style("font-size", "15px").attr("alignment-baseline", "middle")
+        svg.append("circle").attr("cx", width - 50).attr("cy", 100).attr("r", 7).style("fill", "#3d4ed1")
+        svg.append("text").attr("x", width - 40).attr("y", 100).text("Fishing Access ").style("font-size", "15px").attr("alignment-baseline", "middle")
+        svg.append("circle").attr("cx", width - 50).attr("cy", 160).attr("r", 7).style("fill", "#b31b1b").style("opacity", .35)
+        svg.append("text").attr("x", width - 40).attr("y", 160).text("Less Popular Towns").style("font-size", "15px").attr("alignment-baseline", "middle")
+
 
 
     </script>
